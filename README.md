@@ -27,7 +27,7 @@ AutoNode CLI поддерживает установку и удаление н�
 2. `cd autonode-cli`
 3. `npm install`
 4. Переименуй `.env.example` в `.env`
-5. Добавь OpenAI API ключ в `.env.example`
+5. Добавь свой OpenAI API ключ в `.env`. Пример - `OPENAI_API_KEY=sk-...`
 6. `npm run build`
 7. `npm run start`
 
