@@ -13,7 +13,7 @@ export const buildEssentials = async () => {
           : ""
       } \
       curl https://sh.rustup.rs -sSf | sh -s -- -y && \
-      curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash && export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \\. "$NVM_DIR/bash_completion" && nvm install node`
+      curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash && export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" && nvm install node`
     );
   } catch (e) {
     console.error(e);
