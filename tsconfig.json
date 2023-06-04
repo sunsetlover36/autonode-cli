@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+      "module": "ESNext",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "target": "ESNext",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "allowJs": true,
+      "outDir": "dist",
+      "baseUrl": "./src",
+      "skipLibCheck": true,
+      "paths": {
+        "@utils": ["utils/index"],
+        "@utils/*": ["utils/*"],
+        "@gpt": ["gpt/index"],
+        "@gpt/*": ["gpt/*"],
+        "@nodes": ["nodes/index"],
+        "@nodes/*": ["nodes/*"],
+        "@db": ["db/index"],
+        "@db/*": ["db/*"]
+      }
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "./dist"],
+  "tsc-alias": {
+    "resolveFullPaths": true
+  }
+}

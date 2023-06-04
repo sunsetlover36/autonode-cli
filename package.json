@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "autonode-cli",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/ssh2": "^1.11.11",
+    "bignumber.js": "^9.1.1",
+    "chalk": "^5.2.0",
+    "chatgpt": "^5.2.5",
+    "dotenv": "^16.1.3",
+    "figlet": "^1.6.0",
+    "langchain": "^0.0.89",
+    "lowdb": "^6.0.1",
+    "prompt-sync": "^4.2.0",
+    "randomstring": "^1.3.0",
+    "typescript": "^5.1.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.1.0",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.8.6"
+  },
+  "scripts": {
+    "build": "rimraf ./dist && tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "dev": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\" \"cp .env dist/.env\" \"nodemon -r dotenv/config --watch dist dist/index.js\")",
+    "start": "node -r dotenv/config dist/index.js"
+  }
+}
