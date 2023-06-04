@@ -1,5 +1,7 @@
 # AutoNode CLI
 
+![AutoNode CLI](https://i.ibb.co/BKLjhfv/2023-06-04-16-16-55.png)
+
 ## Как это работает?
 С помощью AutoNode CLI можно устанавливать или удалять ноды, которые поддерживает AutoNode CLI.
 * Для установки нод - вводи `install [нода1] [нода2]`
