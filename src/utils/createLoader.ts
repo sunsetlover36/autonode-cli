@@ -20,10 +20,11 @@ export const createLoader = async ({
 
   try {
     await fn();
+    process.stdout.write("\r\x1B[K");
     console.log(`✨ ${chalk.yellow(resultText || "Done!")}\n`);
   } catch {
+    process.stdout.write("\r\x1B[K");
   } finally {
     clearInterval(interval);
-    process.stdout.write("\r\x1B[K");
   }
 };
