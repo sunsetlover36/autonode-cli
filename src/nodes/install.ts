@@ -14,7 +14,9 @@ const installNode = async (node) => {
   try {
     await install();
   } catch (e) {
-    log(chalk.redBright(`Install error for ${capitalize(node)}`));
+    const errorText = `Install error for ${capitalize(node)}`;
+    log(chalk.redBright(errorText));
+    throw new Error(errorText);
   }
 };
 

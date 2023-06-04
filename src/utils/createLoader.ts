@@ -17,8 +17,13 @@ export const createLoader = async ({
     process.stdout.write(chalk.yellow(loaderChars[currentCharIndex]));
     currentCharIndex = (currentCharIndex + 1) % loaderChars.length;
   }, 150);
-  await fn();
-  clearInterval(interval);
-  process.stdout.write("\r\x1B[K");
-  console.log(`✨ ${chalk.yellow(resultText || "Done!")}\n`);
+
+  try {
+    await fn();
+    console.log(`✨ ${chalk.yellow(resultText || "Done!")}\n`);
+  } catch {
+  } finally {
+    clearInterval(interval);
+    process.stdout.write("\r\x1B[K");
+  }
 };

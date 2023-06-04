@@ -13,7 +13,9 @@ const uninstallNode = async (node) => {
   try {
     await uninstall();
   } catch {
-    log(chalk.redBright(`Uninstall error for ${capitalize(node)}`));
+    const errorText = `Uninstall error for ${capitalize(node)}`;
+    log(chalk.redBright(errorText));
+    throw new Error(errorText);
   }
 };
 
