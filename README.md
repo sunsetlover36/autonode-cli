@@ -2,6 +2,8 @@
 
 ## Локальная установка
 
+У тебя должен быть установлен `nodejs` версии не ниже 18.
+
 1. `git clone https://github.com/sunsetlover36/autonode-cli.git`
 2. `cd autonode-cli`
 3. `npm install`
