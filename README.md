@@ -14,7 +14,7 @@ AutoNode CLI поддерживает установку и удаление н�
 
 ## Установка
 
-1. `bash <(curl -s https://gist.githubusercontent.com/sunsetlover36/621038d1976c6e464f539040255bcb04/raw/dc49a401acd0fedd89101c046c9e113498e925ae/setup-autonode-cli.sh)`
+1. `bash <(curl -s https://gist.githubusercontent.com/sunsetlover36/621038d1976c6e464f539040255bcb04/raw/31e3cd36a37e7f1d288fc8f22ae82cbbcae3846e/setup-autonode-cli.sh)`
 2. Введи OpenAI API ключ по запросу
 3. Выбери устанавливать ли Docker (если он у тебя установлен - вводи `n` и нажимай Enter, если нет - то просто нажимай Enter)
 4. После установки вводи `autonode-cli` для работы с AutoNode CLI
