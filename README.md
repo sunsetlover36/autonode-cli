@@ -1,6 +1,22 @@
 # AutoNode CLI
 
-## Локальная установка
+## Как это работает?
+С помощью AutoNode CLI можно устанавливать или удалять ноды, которые поддерживает AutoNode CLI.
+* Для установки нод - вводи `install [нода1] [нода2]`
+* Для удаления нод - вводи `uninstall [нода1] [нода2]`
+
+AutoNode CLI поддерживает установку нескольких нод одновременно.
+
+### Пример
+* `install shardeum lava defund`
+
+## Установка
+
+1. `bash <(curl -s https://gist.githubusercontent.com/sunsetlover36/621038d1976c6e464f539040255bcb04/raw/dc49a401acd0fedd89101c046c9e113498e925ae/setup-autonode-cli.sh)`
+2. Введи OpenAI API ключ по запросу
+3. После установки вводи `autonode-cli` для работы с AutoNode CLI
+
+## Работа с репозиторием
 
 У тебя должен быть установлен `nodejs` версии не ниже 18.
 
