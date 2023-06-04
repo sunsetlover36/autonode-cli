@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
-    "@types/ssh2": "^1.11.11",
-    "bignumber.js": "^9.1.1",
+    "@types/node": "^20.2.5",
     "chalk": "^5.2.0",
     "chatgpt": "^5.2.5",
     "dotenv": "^16.1.3",
